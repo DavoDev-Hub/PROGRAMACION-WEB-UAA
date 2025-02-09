@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script type="application/javascript">
+function grafico(){
+var c = document.getElementById("myCanvas");
+var ctx = c.getContext("2d");
+ctx.fillStyle = "red";
+ctx.fillRect(20, 20, 75, 50); // x,y,ancho,alto
+
+//Turn transparency on
+ctx.globalAlpha = 0.5;
+ctx.fillStyle = "blue"; 
+ctx.fillRect(50, 50, 75, 50); 
+ctx.fillStyle = "green"; 
+ctx.fillRect(80, 80, 75, 50);
+}
+  </script>
+
+</head>
+<body onload="grafico();">
+
+<h1>The canvas element</h1>
+
+<canvas id="myCanvas">
+Your browser does not support the canvas tag.
+</canvas>
+
+
+
+
+</body>
+</html>

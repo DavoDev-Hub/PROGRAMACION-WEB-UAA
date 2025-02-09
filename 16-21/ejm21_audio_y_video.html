@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Insercion de Audio y Video  ejm_04_audio_y_video.html </title>
+</head>
+<body>
+    <video src="/videos/videomuestra.mp4" width="768" height="600" autoplay muted controls loop preload="auto" poster="/imagenes/demo.jpg" >
+        <!-- poster muestra una imagen mientras carga el video o si no 
+        se puede mostrar el video-->
+        <!--Si no carga un video puede tener varias alternativas -->
+        <source src="./videos/videomuestra.mp4" type="video/mp4">
+        <source src="./videos/videomuestra.ogg" type="video/ogg">
+        <source src="./videos/videomuestra.mov" type="video/mov">
+        Tu navegador no soporta este tipo de formato
+    </video>
+    
+    <!--Insertar videos desde youtube con iframe -->
+    <iframe width="500" height="200" src="https://www.youtube.com/embed/mr4A3FmDzcE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="false" frameborder="3"></iframe>
+    <br>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/uW-eJfmbrQw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+   <br>
+   <audio controls>
+       <source src="/audios/pajaro.mp3" type="audio/mp3">
+       <source src="horse.mp3" type="audio/mpeg">
+       Su navegador no soporta este tipo de audio
+   </audio>
+   
+</body>
+</html>
