@@ -1,0 +1,32 @@
+body{
+    background-color: #002665;
+    padding: 0;
+    margin: 0;
+    min-height: 300vh;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: flex;
+    align-items: center;
+    border: 15px solid gray;
+    flex-direction: column;
+}
+
+h1{
+    color: #ffd500;
+    font-size: 200px;
+    margin: 20vh;
+}
+
+table{
+    width: 50%;
+    background-color: white;
+    text-align: center;
+}
+.manija{
+    background-color: gray;
+    width: 400px;
+    height: 100px;
+    margin-top: 20%;
+    align-self: flex-end;
+    margin-right: 100px;
+
+}
