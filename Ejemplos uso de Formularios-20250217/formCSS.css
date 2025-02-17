@@ -1,0 +1,19 @@
+body{
+    background-color:#0E4C75;
+    font-family: 'Roboto', sans-serif;
+    display: flex;  
+    justify-content: center;
+    align-items:center;
+}
+div {
+    background-color:#3282B5;
+}
+
+h2{
+    color:#83C6E7;
+    font-size: 24px;
+	text-align: center;
+}
+form {
+     padding:20px;
+}
