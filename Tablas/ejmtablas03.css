@@ -12,6 +12,7 @@ html {
   td, th {
     border: 1px solid rgb(190,190,190);
     padding: 10px 20px;
+
   }
   
   th {
@@ -33,3 +34,5 @@ html {
   caption {
     padding: 10px;
   }
+
+  
