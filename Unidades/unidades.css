@@ -1,0 +1,50 @@
+html{
+   font-size: 19px;
+}
+.rectang_px{
+   background-color: darkgray;
+   width: 189px;
+   height: 76px;
+}
+.rectang_porcentaje{
+   background-color: darkgray;
+   width: 50%;
+   height: 76px;
+}
+
+.rectang_vw{
+background-color: darkgray;
+width: 50vw;
+height: 76px;
+}
+.parrafo_porc{
+width: 40%;
+background-color: aqua;
+}
+.parrafo_vw{
+   width: 40vw;
+   background-color: yellow;
+}
+a{
+   background-color: green;
+   width: 50%;
+   height: 80px;
+   display: inline-block;
+}
+.p_px{
+   font-size: 21px;
+}
+.p_em{
+   font-size: 1.6em;
+}
+.p_rem{
+   font-size: 1.3rem;
+}
+.div_em{
+   font-size: 1.2em;
+}
+.div_rem{
+   font-size: 1.7rem;
+}
+
+
