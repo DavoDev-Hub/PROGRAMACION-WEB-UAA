@@ -1,0 +1,50 @@
+html{
+    font-size: 16px;
+}
+.rectang_px{
+    background-color: darkgray;
+    width: 189px;
+    height: 76px;
+}
+.rectang_porcentaje{
+    background-color: darkgray;
+    width: 50%;
+    height: 76px;
+}
+.rectang_vw{
+    background-color: darkgray;
+    width: 50vw;
+    height: 76px;
+}
+.parrafo_porc{
+    width: 40%;
+    background-color: aqua;
+}
+.parrafo_vw{ /* relativo al viewport*/
+    width: 40vw;
+    background-color: antiquewhite;
+}
+a{
+    background-color: antiquewhite;
+    width: 50%;
+    height: 80px;
+    display: inline; /* Si no tiene inline-block, no se aplican los cambios en la caja*/
+}
+.div_px{
+    font-size: 26px;
+}
+.p_px{
+    font-size: 21px;
+}
+.div_em{
+    font-size: 1.7em;
+}
+.p_em{ /*se toma en cuenta el elemento padre, en este caso el div ademas toma en cuenta el raiz*/
+    font-size: 1.3em;
+}
+.div_rem{
+    font-size: 1.7rem;
+}
+.p_rem{ /*se toma en cuenta el elemento raiz, en este caso 19 px*/
+    font-size: 1.3rem;
+}
