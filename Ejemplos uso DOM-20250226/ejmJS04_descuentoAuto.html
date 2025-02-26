@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Descuentos</title>
+</head>
+<body>
+    <p id="descuento"></p>
+<script>
+let modelo=1,precio=250000;
+switch (modelo) {
+  case 1:
+    desc = "5%";
+    break;
+  case 2:
+    desc = "10%";
+    break;
+  case 3:
+    desc = "7%";
+    break;
+}
+document.getElementById("descuento").innerHTML =
+ "El descuento que aplica para tu modelo es :" 
+ + desc;
+</script>
+</body>
+</html>
