@@ -13,7 +13,6 @@
   <body>
     <!-- Carrusel -->
     <div class="container w-50 mx-auto">
-      <!-- Ajusta el ancho al 50% y centra -->
       <div id="httpCarousel" class="carousel slide" data-bs-ride="carousel">
         <!-- Indicadores -->
         <div class="carousel-indicators">
@@ -98,7 +97,7 @@
       <form>
         <!-- Pregunta 1 -->
         <div class="mb-3">
-          <label class="form-label">1. ¿Qué significa HTTP?</label>
+          <label class="form-label">1. ¿Qué es un URI?</label>
           <div class="form-check">
             <input
               class="form-check-input"
@@ -108,7 +107,7 @@
               value="a"
             />
             <label class="form-check-label" for="q1a1"
-              >HyperText Transfer Protocol</label
+              >Un identificador de recursos uniforme</label
             >
           </div>
           <div class="form-check">
@@ -120,7 +119,7 @@
               value="b"
             />
             <label class="form-check-label" for="q1a2"
-              >Hyper Transfer Text Protocol</label
+              >Un protocolo de transferencia de hipertexto</label
             >
           </div>
           <div class="form-check">
@@ -132,78 +131,560 @@
               value="c"
             />
             <label class="form-check-label" for="q1a3"
-              >High Transfer Text Protocol</label
+              >Un lenguaje de programación</label
             >
           </div>
         </div>
 
         <!-- Pregunta 2 -->
         <div class="mb-3">
-          <label class="form-label">2. ¿Es HTTP un protocolo seguro?</label>
+          <label class="form-label">2. Menciona las dos clases de URI</label>
           <div class="form-check">
             <input
               class="form-check-input"
-              type="radio"
+              type="checkbox"
               name="q2"
               id="q2a1"
-              value="a"
+              value="URL"
             />
-            <label class="form-check-label" for="q2a1">Verdadero</label>
+            <label class="form-check-label" for="q2a1">URL</label>
           </div>
           <div class="form-check">
             <input
               class="form-check-input"
-              type="radio"
+              type="checkbox"
               name="q2"
               id="q2a2"
-              value="b"
+              value="URN"
             />
-            <label class="form-check-label" for="q2a2">Falso</label>
+            <label class="form-check-label" for="q2a2">URN</label>
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              name="q2"
+              id="q2a3"
+              value="HTTP"
+            />
+            <label class="form-check-label" for="q2a3">HTTP</label>
           </div>
         </div>
 
         <!-- Pregunta 3 -->
         <div class="mb-3">
-          <label class="form-label">3. Selecciona los métodos HTTP:</label>
+          <label class="form-label">3. Sintaxis genérica de una URI</label>
+          <input
+            type="text"
+            class="form-control"
+            name="q3"
+            placeholder="Ejemplo: esquema://host/ruta?query"
+          />
+        </div>
+
+        <!-- Pregunta 4 -->
+        <div class="mb-3">
+          <label class="form-label"
+            >4. ¿En qué caso se tiene que indicar el número de puerto en una
+            URI?</label
+          >
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="q4"
+              id="q4a1"
+              value="a"
+            />
+            <label class="form-check-label" for="q4a1"
+              >Cuando el puerto no es el predeterminado</label
+            >
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="q4"
+              id="q4a2"
+              value="b"
+            />
+            <label class="form-check-label" for="q4a2"
+              >Siempre se debe indicar</label
+            >
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="q4"
+              id="q4a3"
+              value="c"
+            />
+            <label class="form-check-label" for="q4a3">Nunca se indica</label>
+          </div>
+        </div>
+
+        <!-- Pregunta 5 -->
+        <div class="mb-3">
+          <label class="form-label">5. ¿Qué es el DocumentRoot?</label>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="q5"
+              id="q5a1"
+              value="a"
+            />
+            <label class="form-check-label" for="q5a1"
+              >El directorio raíz del servidor web</label
+            >
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="q5"
+              id="q5a2"
+              value="b"
+            />
+            <label class="form-check-label" for="q5a2"
+              >Un protocolo de red</label
+            >
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="q5"
+              id="q5a3"
+              value="c"
+            />
+            <label class="form-check-label" for="q5a3"
+              >Un tipo de archivo</label
+            >
+          </div>
+        </div>
+
+        <!-- Pregunta 6 -->
+        <div class="mb-3">
+          <label class="form-label"
+            >6. ¿Quién suele ser el documento índice?</label
+          >
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="q6"
+              id="q6a1"
+              value="a"
+            />
+            <label class="form-check-label" for="q6a1">index.html</label>
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="q6"
+              id="q6a2"
+              value="b"
+            />
+            <label class="form-check-label" for="q6a2">main.php</label>
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="q6"
+              id="q6a3"
+              value="c"
+            />
+            <label class="form-check-label" for="q6a3">app.js</label>
+          </div>
+        </div>
+
+        <!-- Pregunta 7 -->
+        <div class="mb-3">
+          <label class="form-label"
+            >7. ¿Cuándo se utiliza el "?" dentro de una URI?</label
+          >
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="q7"
+              id="q7a1"
+              value="a"
+            />
+            <label class="form-check-label" for="q7a1"
+              >Para separar la ruta de los parámetros</label
+            >
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="q7"
+              id="q7a2"
+              value="b"
+            />
+            <label class="form-check-label" for="q7a2"
+              >Para indicar un fragmento</label
+            >
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="q7"
+              id="q7a3"
+              value="c"
+            />
+            <label class="form-check-label" for="q7a3"
+              >Para separar el esquema del host</label
+            >
+          </div>
+        </div>
+
+        <!-- Pregunta 8 -->
+        <div class="mb-3">
+          <label class="form-label"
+            >8. ¿Qué indica un código de estado en un http response?</label
+          >
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="q8"
+              id="q8a1"
+              value="a"
+            />
+            <label class="form-check-label" for="q8a1"
+              >El resultado de la solicitud</label
+            >
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="q8"
+              id="q8a2"
+              value="b"
+            />
+            <label class="form-check-label" for="q8a2"
+              >El tipo de contenido</label
+            >
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="q8"
+              id="q8a3"
+              value="c"
+            />
+            <label class="form-check-label" for="q8a3"
+              >El método HTTP utilizado</label
+            >
+          </div>
+        </div>
+
+        <!-- Pregunta 9 -->
+        <div class="mb-3">
+          <label class="form-label"
+            >9. ¿Cuál es la clasificación de los códigos de estado?</label
+          >
           <div class="form-check">
             <input
               class="form-check-input"
               type="checkbox"
-              name="q3"
-              id="q3a1"
+              name="q9"
+              id="q9a1"
+              value="1xx"
+            />
+            <label class="form-check-label" for="q9a1">1xx: Informativos</label>
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              name="q9"
+              id="q9a2"
+              value="2xx"
+            />
+            <label class="form-check-label" for="q9a2">2xx: Éxito</label>
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              name="q9"
+              id="q9a3"
+              value="3xx"
+            />
+            <label class="form-check-label" for="q9a3">3xx: Redirección</label>
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              name="q9"
+              id="q9a4"
+              value="4xx"
+            />
+            <label class="form-check-label" for="q9a4"
+              >4xx: Errores del cliente</label
+            >
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              name="q9"
+              id="q9a5"
+              value="5xx"
+            />
+            <label class="form-check-label" for="q9a5"
+              >5xx: Errores del servidor</label
+            >
+          </div>
+        </div>
+
+        <!-- Pregunta 10 -->
+        <div class="mb-3">
+          <label class="form-label">10. ¿Para qué sirve una cookie?</label>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="q10"
+              id="q10a1"
+              value="a"
+            />
+            <label class="form-check-label" for="q10a1"
+              >Para almacenar información del usuario</label
+            >
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="q10"
+              id="q10a2"
+              value="b"
+            />
+            <label class="form-check-label" for="q10a2"
+              >Para cifrar datos</label
+            >
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="q10"
+              id="q10a3"
+              value="c"
+            />
+            <label class="form-check-label" for="q10a3"
+              >Para enviar correos electrónicos</label
+            >
+          </div>
+        </div>
+
+        <!-- Pregunta 11 -->
+        <div class="mb-3">
+          <label class="form-label"
+            >11. ¿Un servidor puede utilizar las cookies de otro
+            servidor?</label
+          >
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="q11"
+              id="q11a1"
+              value="a"
+            />
+            <label class="form-check-label" for="q11a1">No</label>
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="q11"
+              id="q11a2"
+              value="b"
+            />
+            <label class="form-check-label" for="q11a2">Sí</label>
+          </div>
+        </div>
+
+        <!-- Pregunta 12 -->
+        <div class="mb-3">
+          <label class="form-label"
+            >12. ¿Cuáles son los dos métodos principales del http
+            request?</label
+          >
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              name="q12"
+              id="q12a1"
               value="GET"
             />
-            <label class="form-check-label" for="q3a1">GET</label>
+            <label class="form-check-label" for="q12a1">GET</label>
           </div>
           <div class="form-check">
             <input
               class="form-check-input"
               type="checkbox"
-              name="q3"
-              id="q3a2"
+              name="q12"
+              id="q12a2"
               value="POST"
             />
-            <label class="form-check-label" for="q3a2">POST</label>
+            <label class="form-check-label" for="q12a2">POST</label>
           </div>
           <div class="form-check">
             <input
               class="form-check-input"
               type="checkbox"
-              name="q3"
-              id="q3a3"
+              name="q12"
+              id="q12a3"
               value="DELETE"
             />
-            <label class="form-check-label" for="q3a3">DELETE</label>
+            <label class="form-check-label" for="q12a3">DELETE</label>
+          </div>
+        </div>
+
+        <!-- Pregunta 13 -->
+        <div class="mb-3">
+          <label class="form-label">13. ¿Qué significan las siglas HTTP?</label>
+          <input type="text" class="form-control" name="q13 placeholder="Escribe
+          tu respuesta aquí" />
+        </div>
+
+        <!-- Pregunta 14 -->
+        <div class="mb-3">
+          <label class="form-label">14. ¿Qué acción realiza un GET?</label>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="q14"
+              id="q14a1"
+              value="a"
+            />
+            <label class="form-check-label" for="q14a1"
+              >Solicita datos de un recurso</label
+            >
           </div>
           <div class="form-check">
             <input
               class="form-check-input"
-              type="checkbox"
-              name="q3"
-              id="q3a4"
-              value="UPDATE"
+              type="radio"
+              name="q14"
+              id="q14a2"
+              value="b"
             />
-            <label class="form-check-label" for="q3a4">UPDATE</label>
+            <label class="form-check-label" for="q14a2"
+              >Envía datos para ser procesados</label
+            >
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="q14"
+              id="q14a3"
+              value="c"
+            />
+            <label class="form-check-label" for="q14a3"
+              >Elimina un recurso</label
+            >
+          </div>
+        </div>
+
+        <!-- Pregunta 15 -->
+        <div class="mb-3">
+          <label class="form-label">15. ¿Qué acción realiza un POST?</label>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="q15"
+              id="q15a1"
+              value="a"
+            />
+            <label class="form-check-label" for="q15a1"
+              >Envía datos para ser procesados</label
+            >
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="q15"
+              id="q15a2"
+              value="b"
+            />
+            <label class="form-check-label" for="q15a2"
+              >Solicita datos de un recurso</label
+            >
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="q15"
+              id="q15a3"
+              value="c"
+            />
+            <label class="form-check-label" for="q15a3"
+              >Actualiza un recurso</label
+            >
+          </div>
+        </div>
+
+        <!-- Pregunta 16 -->
+        <div class="mb-3">
+          <label class="form-label"
+            >16. ¿Qué significa que tengas un código 404 y un 503?</label
+          >
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="q16"
+              id="q16a1"
+              value="a"
+            />
+            <label class="form-check-label" for="q16a1"
+              >404: Recurso no encontrado; 503: Servicio no disponible</label
+            >
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="q16"
+              id="q16a2"
+              value="b"
+            />
+            <label class="form-check-label" for="q16a2"
+              >404: Error del servidor; 503: Error del cliente</label
+            >
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="q16"
+              id="q16a3"
+              value="c"
+            />
+            <label class="form-check-label" for="q16a3"
+              >404: Redirección; 503: Éxito</label
+            >
           </div>
         </div>
 
